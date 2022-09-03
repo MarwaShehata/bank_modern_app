@@ -138,3 +138,31 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+.stats-1{
+background-color: transparent;
+}
+.stats-2{
+  background-color: transparent;
+}
+.stats-3{
+  background-color: transparent;
+}
+.stats-2::before{
+  content: " ";
+  width: .5px;
+  height: 15px;
+  background-color: white;
+
+  position: relative;
+  top: 0px;
+  left: -23%;
+}
+.stats-2::after{
+  content: " ";
+  width: .5px;
+  height: 15px;
+  background-color: white;
+  position: relative;
+  top: 0px;
+  left: 15%;
+}
