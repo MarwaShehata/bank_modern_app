@@ -21,7 +21,7 @@ const Navbar = () => {
         })}
       </ul>
       <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img onClick={()=>setToggle((prev)=>!prev)} className="h[28px] w-[28px] object-contain" src={!toggle?menu:close} alt='menu'/>
+        <img onClick={()=>setToggle((prev)=>!prev)} className="h[28px] w-[28px] object-contain curser-pointer" src={!toggle?menu:close} alt='menu'/>
       </div>
       <div className={`${toggle?"flex":"hidden"} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] rounded-xl sidebar`}>
       <ul className="list-none flex flex-col  items-start flex-1">

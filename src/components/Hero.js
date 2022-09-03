@@ -45,10 +45,15 @@ const Hero = () => {
         </p>
       </div>
       {/* THE RIGHT SIDE */}
-      <div className="text-white
-      ">
+      <div className={`relative flex-1 flex md:my-0 my-10 ${styles.flexCenter}` } >
         <img src={robot} alt="biling" className="w-[100%] h-[100%] relative z-[5]"/>
+        <div className="absolute z-[0] w-[40%] h-[40%] top-0 pink__gradient "/>
+        <div className="absolute z-[1] w-[80%] h-[80%] rouded-full bottom-40 white__gradient"/>
+        <div className="absolute z-[0] w-[50%] h-[50%] bottom-20 right-20 blue__gradient  "/>
       </div>
+      <div className={`ss:hidden ${styles.flexCenter}`}>
+            <GetStarted />
+          </div>
     </section>
   );
 };
